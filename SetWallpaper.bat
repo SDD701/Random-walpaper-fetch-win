@@ -12,3 +12,6 @@ DEL Output
 :: 3. Download from link to the path
 DEL wallpaper.jpg
 wget --no-check-certificate -O wallpaper.jpg %downloadLink%
+
+reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "D:\Projects\Random walpaper fetch win\wallpaper.jpg" /f
+RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
