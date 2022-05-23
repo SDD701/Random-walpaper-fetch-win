@@ -26,7 +26,7 @@ DEL %AppData%\Microsoft\Windows\Themes\TranscodedWallpaper
 REN %AppData%\Microsoft\Windows\Themes\wallpaper.jpg TranscodedWallpaper
 
 COPY wallpaper.jpg %AppData%\Microsoft\Windows\Themes\CachedFiles
-DEL %AppData%\Microsoft\Windows\Themes\CachedFiles\CachedImage_1920_1080_POS2.jpg0
+DEL %AppData%\Microsoft\Windows\Themes\CachedFiles\CachedImage_1920_1080_POS3.jpg0
 REN %AppData%\Microsoft\Windows\Themes\CachedFiles\wallpaper.jpg CachedImage_1920_1080_POS2.jpg
 
 POWERSHELL -file RefreshWallpaper.ps1 -path "D:\Projects\Random walpaper fetch win\wallpaper.jpg"
